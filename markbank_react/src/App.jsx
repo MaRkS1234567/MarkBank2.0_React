@@ -1,7 +1,12 @@
 import "./App.css";
+import Header from "./components/layout/header/header";
 
 function App() {
-  return <>MarkBank2.0</>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;
