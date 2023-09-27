@@ -5,7 +5,7 @@ import styles from "./Header.module.scss";
 const Header = () => {
   return (
     <div className={styles.header}>
-      <img src="/images/logo.png" className={styles.logo} />
+      <img src="/logo.svg" className={styles.logo} />
       <Profile />
       <TopBar />
     </div>

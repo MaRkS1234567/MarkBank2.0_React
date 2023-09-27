@@ -1,0 +1,24 @@
+@import "src/assets/styles/variables";
+
+.ul {
+  display: flex;
+  background: white;
+  margin: 0;
+  margin-left: 20px;
+  height: 67px;
+  width: 78%;
+  border-radius: 40px;
+
+  > a {
+    padding-top: 14px;
+    text-decoration: none;
+    width: 16.66%;
+    margin: 9px;
+    background: transparent;
+    color: $dark-accent;
+  }
+
+  > a.active {
+    color: black;
+  }
+}
