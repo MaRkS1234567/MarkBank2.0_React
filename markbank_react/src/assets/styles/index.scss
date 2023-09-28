@@ -15,10 +15,22 @@ body {
   padding: 6px;
 }
 
+.inline {
+  display: flex;
+}
+
 .flex {
   display: flex;
 }
 
 .block {
   display: block;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
