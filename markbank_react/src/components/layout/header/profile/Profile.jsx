@@ -1,18 +1,12 @@
 import styles from "./Profile.module.scss";
+import { User } from "../../../../models/User.model.js";
 
 const Profile = () => {
-  let user = {
-    name: "Mark",
-    img: {
-      src: "/images/avatar_1.jpeg",
-      alt: "Avatar",
-    },
-  };
   return (
     <div className={styles.profile}>
       <p className={styles.welcome}>Welcome back, </p>
-      <p className={styles.user}>{user.name}!</p>
-      <img src={user.img.src} className={styles.img} alt={user.img.alt} />
+      <p className={styles.user}>{User.first_name}!</p>
+      <img src={User.img.src} className={styles.img} alt={User.img.alt} />
     </div>
   );
 };

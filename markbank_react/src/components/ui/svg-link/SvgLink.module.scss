@@ -1,0 +1,43 @@
+@import "src/assets/styles/variables";
+
+.svgLink {
+  display: flex;
+  background: white;
+  padding-top: 20px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: $light-accent;
+  margin-top: 5px;
+
+  margin-right: 15px;
+  margin-left: 30px;
+
+  > svg {
+    margin-top: 9px;
+    background: $light-accent;
+  }
+}
+
+.text {
+  color: black;
+  background: transparent;
+}
+
+.button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: white;
+  margin-top: 13px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.arrow {
+  background: white;
+  color: $dark-accent;
+}

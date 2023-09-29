@@ -1,7 +1,107 @@
-.cards {
+@import "src/assets/styles/variables";
+
+.cards_top {
   margin-top: 20px;
-  background: white !important;
-  border-radius: 33.5px;
-  height: 580px;
+  border-radius: 33.5px 33.5px 0 0;
+  height: 70px;
   width: 100%;
+  background: white;
+  display: flex;
+
+  > a {
+    text-decoration: none;
+    color: $purple-accent;
+    background: white !important;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 30px;
+    background: linear-gradient(#fff, #f3f3f3);
+  }
+}
+
+.cards_middle {
+  background: linear-gradient(#fff, #f4f5f5);
+  height: 185px;
+  width: 100%;
+}
+
+.cards_bottom {
+  margin-top: 0px;
+  background: white !important;
+  border-radius: 0 0 33.5px 33.5px;
+  height: 385px;
+  width: 100%;
+}
+
+.card {
+  background-color: black;
+  border-radius: 17px 17px 0 0;
+  width: calc(100% - 60px);
+  margin: auto;
+  height: calc(100% - 30px);
+  position: relative;
+  // bottom: 16px;
+
+  > div {
+    background-color: black;
+    border-radius: 17px 17px 0 0;
+    margin-right: auto;
+    color: white;
+    position: relative;
+  }
+}
+
+.fignya {
+  background: $purple-accent;
+  top: 6px;
+  height: 30px;
+  width: calc(100% - 100px);
+  margin: auto;
+  border-radius: 17px 17px 0 0;
+  transform: rotate(-0.005turn);
+  position: relative;
+}
+
+.full_name {
+  float: left;
+  margin-left: 30px;
+  margin-top: 35px;
+  display: flex;
+  width: calc(100% - 30px);
+  font-size: 20px;
+}
+
+.number {
+  background: black !important;
+  text-align: left;
+  padding-left: 30px;
+  letter-spacing: 3px;
+  color: white;
+  margin-top: 22px;
+}
+
+.cvv {
+  margin-left: auto;
+  margin-right: 20px;
+  background: #333333;
+  padding: 5px;
+  width: 50px;
+  border-radius: 15px;
+  color: white;
+}
+
+.svg {
+  width: 37px;
+  margin-left: auto;
+  margin-right: 30px;
+  margin-top: -5px;
+  background: black;
+}
+
+.buttons {
+  background: transparent;
+  display: flex;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }

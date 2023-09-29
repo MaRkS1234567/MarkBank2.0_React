@@ -1,0 +1,29 @@
+@import "src/assets/styles/variables";
+
+.button_normal {
+  display: flex;
+  background: $purple-accent;
+  color: white;
+  border: none;
+  justify-content: center;
+  align-items: center;
+
+  > svg {
+    background: $purple-accent;
+    margin-left: 20px;
+  }
+}
+
+.button_error {
+  display: flex;
+  background-color: $light-error;
+  color: $dark-error;
+  border: none;
+  justify-content: center;
+  align-items: center;
+
+  > svg {
+    background: $light-error;
+    margin-left: 20px;
+  }
+}

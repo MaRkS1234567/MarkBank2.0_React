@@ -21,16 +21,13 @@ body {
 
 .flex {
   display: flex;
+  background: whitesmoke;
 }
 
 .block {
   display: block;
 }
 
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
+.white {
+  background: white;
 }
