@@ -1,5 +1,5 @@
 import Titles from "../../../ui/title/Title";
-import styles from "./Cards.module.scss";
+import styles from "./Card.module.scss";
 import { NavLink } from "react-router-dom";
 import { User } from "../../../../models/User.model.js";
 import { useState } from "react";
@@ -11,13 +11,13 @@ import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import Button from "../../../ui/button/Button";
 
-const Cards = () => {
+const Card = () => {
   const [cvvShow, setCvvShow] = useState(true);
   return (
     <>
       <div className={styles.cards_top}>
         <Titles>Cards</Titles>
-        <NavLink to="/anotherPage">Show all</NavLink>
+        <NavLink to="/cards">Show all</NavLink>
       </div>
       <div className={styles.cards_middle}>
         <div className={styles.fignya}></div>
@@ -75,4 +75,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default Card;

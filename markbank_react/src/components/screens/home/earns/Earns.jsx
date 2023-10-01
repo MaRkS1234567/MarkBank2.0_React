@@ -18,7 +18,7 @@ const Earns = () => {
           <p>it will be ready in 2 business days.</p>
         </div>
       </div>
-      <NavLink to="/anotherPage">
+      <NavLink to="/earn">
         <div>
           <p>Get your money now</p>
           <BsArrowRight size={20} fill="#734494" />

@@ -1,12 +1,12 @@
 import Layout from "../../layout/Layout";
 
-const AnotherPage = () => {
+const Recipients = () => {
   return (
     <>
       <Layout></Layout>
-      <div>Another Page</div>
+      <div>Recipients</div>
     </>
   );
 };
 
-export default AnotherPage;
+export default Recipients;

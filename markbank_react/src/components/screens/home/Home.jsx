@@ -1,7 +1,7 @@
 import Layout from "../../layout/Layout";
 import styles from "./Home.module.scss";
 import Amount from "./amount/Amount";
-import Cards from "./cards/Cards";
+import Card from "./card/Card";
 import Contacts from "./contacts/Contacts";
 import Earns from "./earns/Earns";
 import History from "./history/History";
@@ -13,7 +13,7 @@ const Home = () => {
       <Layout></Layout>
       <div className="inline">
         <div className={styles.left}>
-          <Cards />
+          <Card />
           <Earns />
         </div>
         <div className={styles.right}>

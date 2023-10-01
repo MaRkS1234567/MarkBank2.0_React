@@ -15,7 +15,7 @@ const TopBar = () => {
         Summary
       </NavLink>
       <NavLink
-        to="/anotherPage"
+        to="/cards"
         style={({ isActive }) => {
           return {
             color: isActive ? "black" : "",
@@ -25,7 +25,7 @@ const TopBar = () => {
         Cards
       </NavLink>
       <NavLink
-        to="/anotherPage"
+        to="/activity"
         style={({ isActive }) => {
           return {
             color: isActive ? "black" : "",
@@ -35,7 +35,7 @@ const TopBar = () => {
         Activity
       </NavLink>
       <NavLink
-        to="/anotherPage"
+        to="/recipients"
         style={({ isActive }) => {
           return {
             color: isActive ? "black" : "",
@@ -45,7 +45,7 @@ const TopBar = () => {
         Recipients
       </NavLink>
       <NavLink
-        to="/anotherPage"
+        to="/help"
         style={({ isActive }) => {
           return {
             color: isActive ? "black" : "",
@@ -55,7 +55,7 @@ const TopBar = () => {
         Help center
       </NavLink>
       <NavLink
-        to="/anotherPage"
+        to="/earn"
         style={({ isActive }) => {
           return {
             color: isActive ? "black" : "",
