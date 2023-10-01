@@ -1,7 +1,76 @@
+@import "src/assets/styles/variables";
+
 .earns {
   margin-top: 20px;
   background: white !important;
   border-radius: 33.5px;
   height: 200px;
   width: 100%;
+
+  > a {
+    display: flex;
+    background: white;
+    margin-top: 15px;
+    text-decoration-color: $purple-accent;
+
+    > div {
+      margin: auto;
+      display: flex;
+      background: white;
+
+      > p {
+        background: white;
+        color: $purple-accent;
+      }
+
+      > svg {
+        margin-top: 15px;
+        margin-left: 15px;
+        background: white;
+      }
+    }
+  }
+}
+
+.money {
+  width: 100%;
+  height: 50px;
+  border-radius: 33.5px 33.5px 0 0;
+}
+
+.img {
+  width: 100%;
+  height: 50px;
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: 33.5px 33.5px 0 0;
+}
+
+.click {
+  background: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-left: 30px;
+
+  > svg {
+    background-color: black;
+    margin-top: 12px;
+  }
+}
+
+.text {
+  background: white;
+  margin-left: 30px;
+  margin-top: 15px;
+
+  > p {
+    background: white;
+    color: $dark-accent;
+    font-size: 13px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: left;
+  }
 }

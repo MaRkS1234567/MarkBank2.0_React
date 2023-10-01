@@ -40,16 +40,16 @@ const Cards = () => {
       </div>
       <div className={styles.cards_bottom}>
         <SvgLink linkText={"Show Card Details"}>
-          <IoCardOutline size={22} />
+          <IoCardOutline size={22} stroke="#b3b3b3" />
         </SvgLink>
         <SvgLink linkText={"Your PIN"}>
-          <BsThreeDots size={22} />
+          <BsThreeDots size={22} fill="#b3b3b3" />
         </SvgLink>
         <SvgLink linkText={"Security Code"}>
-          <HiOutlineLockClosed size={22} />
+          <HiOutlineLockClosed size={22} stroke="#b3b3b3" />
         </SvgLink>
         <SvgLink linkText={"Edit Limits"}>
-          <HiOutlineAdjustmentsHorizontal size={22} />
+          <HiOutlineAdjustmentsHorizontal size={22} stroke="#b3b3b3" />
         </SvgLink>
         <div className={styles.buttons}>
           <Button
