@@ -8,5 +8,8 @@ export const User = {
   card: {
     number: "1234 5678 9012 3456",
     cvv: "123",
+    balance: 29475,
   },
+  total_balance: 29475,
+  current_currency: "USD",
 };

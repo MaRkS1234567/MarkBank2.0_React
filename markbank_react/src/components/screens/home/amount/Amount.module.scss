@@ -1,3 +1,5 @@
+@import "src/assets/styles/variables";
+
 .amount {
   margin-top: 20px;
   margin-left: 20px;
@@ -6,4 +8,31 @@
   height: 255px;
   width: 58%;
   margin-left: right;
+}
+
+.balance {
+  background: white;
+  color: black;
+  font-size: 75px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  margin-left: 30px;
+}
+
+.zero {
+  background: white;
+  color: black;
+  font-size: 75px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.currency {
+  background: white;
+  color: $dark-accent;
+  margin-top: 50px;
+  font-size: 22px;
+  margin-left: 25px;
 }

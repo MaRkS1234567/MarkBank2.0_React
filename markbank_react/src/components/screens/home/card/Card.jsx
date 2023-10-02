@@ -54,7 +54,7 @@ const Card = () => {
         <div className={styles.buttons}>
           <Button
             buttonText={"Add Card"}
-            isError={false}
+            type={"purple"}
             width={150}
             height={50}
           >
@@ -62,7 +62,7 @@ const Card = () => {
           </Button>
           <Button
             buttonText={"Remove"}
-            isError={true}
+            type={"error"}
             width={150}
             height={50}
             position={"right"}

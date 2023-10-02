@@ -9,7 +9,7 @@ const Earns = () => {
       <div className={styles.money}>
         <img src="images/money3.webp" alt="" className={styles.img} />
       </div>
-      <div className="flex white">
+      <div className="flex white" style={{ "justify-content": "center" }}>
         <div className={styles.click}>
           <TbClick stroke="#fff" />
         </div>

@@ -1,6 +1,6 @@
 @import "src/assets/styles/variables";
 
-.button_normal {
+.button_purple {
   display: flex;
   background: $purple-accent;
   color: white;
@@ -10,6 +10,20 @@
 
   > svg {
     background: $purple-accent;
+    margin-left: 20px;
+  }
+}
+
+.button_common {
+  display: flex;
+  background: $light-accent;
+  color: black;
+  border: none;
+  justify-content: center;
+  align-items: center;
+
+  > svg {
+    background: $light-accent;
     margin-left: 20px;
   }
 }
