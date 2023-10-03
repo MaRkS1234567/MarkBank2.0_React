@@ -1,3 +1,5 @@
+@import "src/assets/styles/variables";
+
 .contacts {
   height: 200px;
   width: calc(100% - 20px);
@@ -5,4 +7,63 @@
   border-radius: 33.5px;
   margin-left: 20px;
   margin-top: 20px;
+
+  > p {
+    margin-top: 0;
+    padding-top: 30px;
+  }
+}
+
+.top {
+  background: transparent;
+  display: flex;
+
+  > a {
+    text-decoration: none;
+    color: $purple-accent;
+    background: white !important;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 30px;
+  }
+}
+
+.add {
+  background: transparent;
+
+  > p {
+    text-align: left;
+    margin-left: 50px;
+    background: white;
+    color: $purple-accent;
+    margin-top: 10px;
+  }
+}
+
+.dash {
+  background: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px dashed $purple-accent;
+  margin-left: 30px;
+  margin-top: 5px;
+
+  > svg {
+    background: white;
+    margin-top: 24px;
+  }
+}
+
+.container {
+  display: flex;
+  background: transparent;
+}
+
+.all_contacts {
+  display: flex;
+  background: transparent;
+  overflow-y: hidden;
+  overflow-x: auto;
+  width: 100%;
 }
