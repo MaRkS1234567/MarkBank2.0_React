@@ -1,13 +1,17 @@
 @import "src/assets/styles/variables";
 
 .invites {
-  background-image: url(./public/images/people.jpg);
+  background-image: url(./public/images/people.png);
   background-size: cover;
   border-radius: 33.5px;
   width: calc(42% - 40px);
   margin-top: 20px;
   margin-left: 20px;
   display: flex;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position-y: -60px;
+  background-position-x: -100px;
 }
 
 .content {

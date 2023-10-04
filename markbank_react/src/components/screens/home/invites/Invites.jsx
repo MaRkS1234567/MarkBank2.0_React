@@ -38,7 +38,6 @@ const Invites = () => {
             size={20}
             onClick={() => {
               navigator.clipboard.writeText(code);
-              alert("Copied!");
             }}
           />
         </div>

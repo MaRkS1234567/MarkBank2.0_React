@@ -7,7 +7,7 @@ const Earns = () => {
   return (
     <div className={styles.earns}>
       <div className={styles.money}>
-        <img src="images/money3.webp" alt="" className={styles.img} />
+        <img src="images/earns.png" alt="" className={styles.img} />
       </div>
       <div className="flex white" style={{ "justify-content": "center" }}>
         <div className={styles.click}>

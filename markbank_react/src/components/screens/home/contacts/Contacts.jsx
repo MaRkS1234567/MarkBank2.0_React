@@ -21,7 +21,10 @@ const Contacts = () => {
           <p>Add</p>
         </div>
         <div className={styles.all_contacts}>
-          <Contact name={"Red Fall"} url={"images/red_fall.jpg"} />
+          <Contact
+            name={"Mark S"}
+            url={generator.generateRandomAvatar("Mark")}
+          />
           <Contact
             name={"Alina S"}
             url={generator.generateRandomAvatar("Alina")}
@@ -65,6 +68,10 @@ const Contacts = () => {
           <Contact
             name={"Rig Mor"}
             url={generator.generateRandomAvatar("Rig")}
+          />
+          <Contact
+            name={"Liana F"}
+            url={generator.generateRandomAvatar("Liana")}
           />
         </div>
       </div>
