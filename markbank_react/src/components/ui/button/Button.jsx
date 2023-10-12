@@ -4,7 +4,7 @@ const Button = ({ type, buttonText, children, width, height, position }) => {
   return (
     <button
       style={{
-        width: `${width}px`,
+        width: `calc(${width}% - 10px)`,
         height: `${height}px`,
         borderRadius: `${height / 2}px`,
         marginRight: position ? "0" : "auto",

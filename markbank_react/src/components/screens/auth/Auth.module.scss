@@ -1,0 +1,29 @@
+.auth {
+  max-width: 550px;
+  background: white;
+  margin: auto;
+  border-radius: 33.5px;
+  justify-content: center;
+  position: absolute;
+  height: 320px;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  > h1 {
+    background: transparent;
+  }
+
+  > div {
+    background: transparent;
+  }
+}
+
+.buttons {
+  background: transparent;
+  display: flex;
+  padding: 30px;
+  padding-top: 0;
+}

@@ -55,7 +55,7 @@ const Card = () => {
           <Button
             buttonText={"Add Card"}
             type={"purple"}
-            width={150}
+            width={50}
             height={50}
           >
             <AiOutlinePlus size={17} fill="#fff" />
@@ -63,7 +63,7 @@ const Card = () => {
           <Button
             buttonText={"Remove"}
             type={"error"}
-            width={150}
+            width={50}
             height={50}
             position={"right"}
           >

@@ -1,0 +1,33 @@
+@import "src/assets/styles/variables";
+
+.input {
+  background: $purple-accent;
+  border: 1px solid transparent;
+  color: white;
+  font-size: 16px;
+  padding: 14px;
+  border-radius: 33.5px;
+  margin-bottom: 30px;
+  outline: none;
+  width: calc(100% - 90px);
+  text-align: left;
+
+  &:focus {
+    transition: background-color 0.15s ease;
+    background: lighten($purple-accent, 15%);
+  }
+
+  &::placeholder {
+    font-size: 15px;
+    color: white;
+    opacity: 0.5;
+    // padding: 15px;
+  }
+}
+
+.error {
+  color: #8d2b3d;
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.4rem;
+}

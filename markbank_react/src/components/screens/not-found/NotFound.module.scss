@@ -1,0 +1,20 @@
+@import "src/assets/styles/variables";
+
+.notFound {
+  margin-top: 20px;
+  background: white;
+  display: flex;
+  border-radius: 33.5px;
+}
+
+.error {
+  margin: auto;
+  background: transparent;
+  display: flex;
+
+  > p {
+    background: white;
+    color: $dark-accent;
+    font-size: 50px;
+  }
+}

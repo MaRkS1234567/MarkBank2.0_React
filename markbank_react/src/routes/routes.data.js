@@ -4,6 +4,7 @@ import Activity from "../components/screens/activity/Activity";
 import Recipients from "../components/screens/recipients/Recipients";
 import Help from "../components/screens/help/Help";
 import Earn from "../components/screens/earn/Earn";
+import Auth from "../components/screens/auth/Auth";
 
 export const routes = [
   {
@@ -29,5 +30,9 @@ export const routes = [
   {
     path: "/earn",
     component: Earn,
+  },
+  {
+    path: "/auth",
+    component: Auth,
   },
 ];

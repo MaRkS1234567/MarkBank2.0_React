@@ -25,16 +25,17 @@ const Amount = () => {
         className="flex white"
         style={{
           paddingLeft: "30px",
+          paddingRight: "20px",
           paddingTop: "10px",
         }}
       >
-        <Button buttonText={"Send"} type={"purple"} width={170} height={50}>
+        <Button buttonText={"Send"} type={"purple"} width={33} height={50}>
           <BsArrowUp size={17} fill="#fff" />
         </Button>
-        <Button buttonText={"Request"} type={"common"} width={170} height={50}>
+        <Button buttonText={"Request"} type={"common"} width={33} height={50}>
           <BsArrowDown size={17} fill="#000" />
         </Button>
-        <Button buttonText={"Top Up"} type={"common"} width={170} height={50}>
+        <Button buttonText={"Top Up"} type={"common"} width={33} height={50}>
           <AiOutlinePlus size={17} fill="#000" />
         </Button>
       </div>
