@@ -1,10 +1,10 @@
 import styles from "./Field.module.scss";
 
-const Field = ({ name, options, ...rest }) => {
+const Field = ({ register, name, options, error, ...rest }) => {
   return (
     <div>
-      <input {...rest} className={styles.input} />
-      {/* {error && <div className={styles.error}>{error}</div>} */}
+      <input {...register(name, options)} {...rest} className={styles.input} />
+      {error && <div className={styles.error}>{error}</div>}
     </div>
   );
 };

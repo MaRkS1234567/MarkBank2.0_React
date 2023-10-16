@@ -1,19 +1,16 @@
 import styles from "./History.module.scss";
 import Titles from "../../../ui/title/Title";
-import { LuCalendarDays } from "react-icons/lu";
 import { AiFillBank } from "react-icons/ai";
 import { BsChevronRight, BsSteam } from "react-icons/bs";
 import Transaction from "./transaction/Transaction";
+import Calendar from "./calendar/Calendar";
 
 const History = () => {
   return (
     <div className={styles.history}>
       <div className={styles.top}>
         <Titles>Transaction History</Titles>
-        <div className={styles.calendar}>
-          <p>Select Date Range</p>
-          <LuCalendarDays size={20} />
-        </div>
+        <Calendar />
         <button className={styles.arrow}>
           <BsChevronRight size={20} fill="#fff" />
         </button>

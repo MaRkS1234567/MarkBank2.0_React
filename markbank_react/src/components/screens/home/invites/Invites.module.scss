@@ -48,12 +48,28 @@
     margin-left: 30px;
   }
 
-  > svg {
-    margin-left: auto;
-    margin-right: 7px;
-    background: black;
-    padding: 13px;
+  > div {
+    background-color: black;
     border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-left: auto;
     margin-top: 6px;
+    margin-right: 7px;
+
+    > svg {
+      background: transparent;
+      margin-top: 9px;
+      margin-right: 0px;
+    }
   }
+
+  // > svg {
+  //   margin-left: auto;
+  //   margin-right: 7px;
+  //   background: black;
+  //   padding: 13px;
+  //   border-radius: 50%;
+  //   margin-top: 6px;
+  // }
 }

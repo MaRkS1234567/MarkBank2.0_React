@@ -33,13 +33,15 @@ const Invites = () => {
         </p>
         <div className={styles.code}>
           <p>{code}</p>
-          <FaCopy
-            fill="#fff"
-            size={20}
-            onClick={() => {
-              navigator.clipboard.writeText(code);
-            }}
-          />
+          <div>
+            <FaCopy
+              fill="#fff"
+              size={23}
+              onClick={() => {
+                navigator.clipboard.writeText(code);
+              }}
+            />
+          </div>
         </div>
       </div>
     </div>

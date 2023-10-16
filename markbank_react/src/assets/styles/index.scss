@@ -10,11 +10,17 @@
   letter-spacing: 0.5px;
 }
 
+#root {
+  height: 100%;
+}
+
 html,
 body {
   padding: 6px;
+  padding-top: 11px;
   max-width: 1400px;
   margin: auto;
+  height: 100%;
 }
 
 .inline {
@@ -32,4 +38,8 @@ body {
 
 .white {
   background: white;
+}
+
+.transparent {
+  background: transparent;
 }

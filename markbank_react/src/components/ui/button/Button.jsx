@@ -1,6 +1,14 @@
 import styles from "./Button.module.scss";
 
-const Button = ({ type, buttonText, children, width, height, position }) => {
+const Button = ({
+  type,
+  buttonText,
+  children,
+  width,
+  height,
+  position,
+  clickHandler = null,
+}) => {
   return (
     <button
       style={{
@@ -16,6 +24,7 @@ const Button = ({ type, buttonText, children, width, height, position }) => {
           ? styles.button_error
           : styles.button_common
       }
+      onClick={clickHandler}
     >
       {buttonText}
       {children}

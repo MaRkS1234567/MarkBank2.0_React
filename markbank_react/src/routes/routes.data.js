@@ -10,29 +10,36 @@ export const routes = [
   {
     path: "/",
     component: Home,
+    isAuth: true,
   },
   {
     path: "/cards",
     component: Cards,
+    isAuth: true,
   },
   {
     path: "/activity",
     component: Activity,
+    isAuth: true,
   },
   {
     path: "/recipients",
     component: Recipients,
+    isAuth: true,
   },
   {
     path: "/help",
     component: Help,
+    isAuth: true,
   },
   {
     path: "/earn",
     component: Earn,
+    isAuth: true,
   },
   {
     path: "/auth",
     component: Auth,
+    isAuth: false,
   },
 ];

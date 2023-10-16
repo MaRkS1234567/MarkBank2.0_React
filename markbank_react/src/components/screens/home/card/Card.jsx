@@ -10,9 +10,13 @@ import { HiOutlineLockClosed } from "react-icons/hi";
 import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import Button from "../../../ui/button/Button";
+import { useProfile } from "../../../layout/header/profile/useProfile";
 
 const Card = () => {
   const [cvvShow, setCvvShow] = useState(true);
+
+  const { data, isLoading } = useProfile();
+
   return (
     <>
       <div className={styles.cards_top}>
@@ -23,7 +27,7 @@ const Card = () => {
         <div className={styles.fignya}></div>
         <div className={styles.card}>
           <div className={styles.full_name}>
-            {User.first_name} {User.last_name}
+            {data?.name}
             <img className={styles.svg} src="/images/mastercard.svg" alt="" />
           </div>
           <br />

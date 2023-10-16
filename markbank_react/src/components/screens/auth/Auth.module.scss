@@ -1,23 +1,21 @@
 .auth {
-  max-width: 550px;
+  width: 550px;
   background: white;
   margin: auto;
   border-radius: 33.5px;
-  justify-content: center;
-  position: absolute;
-  height: 320px;
-
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  // height: 100%;
 
   > h1 {
     background: transparent;
+    // padding-top: 20px;
   }
 
-  > div {
+  > form {
     background: transparent;
+
+    > div {
+      background: transparent;
+    }
   }
 }
 
@@ -26,4 +24,11 @@
   display: flex;
   padding: 30px;
   padding-top: 0;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }

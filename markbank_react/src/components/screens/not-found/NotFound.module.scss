@@ -3,14 +3,39 @@
 .notFound {
   margin-top: 20px;
   background: white;
-  display: flex;
   border-radius: 33.5px;
+
+  > a {
+    display: flex;
+    text-align: center;
+    color: $purple-accent;
+    background: transparent;
+    font-size: 20px;
+
+    > div {
+      margin: auto;
+      display: flex;
+      background: white;
+
+      > p {
+        background: white;
+        color: $purple-accent;
+      }
+
+      > svg {
+        margin-top: 20px;
+        margin-left: 10px;
+        background: transparent;
+      }
+    }
+  }
 }
 
 .error {
   margin: auto;
   background: transparent;
   display: flex;
+  justify-content: center;
 
   > p {
     background: white;

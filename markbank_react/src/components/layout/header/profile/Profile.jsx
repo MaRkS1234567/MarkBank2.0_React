@@ -1,17 +1,21 @@
 import styles from "./Profile.module.scss";
-import { User } from "../../../../models/User.model.js";
 import { AvatarGenerator } from "random-avatar-generator";
+import { useProfile } from "./useProfile";
 
 const Profile = () => {
   const generator = new AvatarGenerator();
+
+  const { data, isLoading } = useProfile();
+
+  const name = data?.name.split(" ")[0];
+
   return (
     <div className={styles.profile}>
       <p className={styles.welcome}>Welcome back, </p>
-      <p className={styles.user}>{User.first_name}!</p>
+      <p className={styles.user}>{name}!</p>
       <img
-        src={generator.generateRandomAvatar("Mark")}
+        src={generator.generateRandomAvatar(data?.name)}
         className={styles.img}
-        alt={User.img.alt}
       />
     </div>
   );
