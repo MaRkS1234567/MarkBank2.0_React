@@ -11,9 +11,14 @@ import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import Button from "../../../ui/button/Button";
 import { useProfile } from "../../../layout/header/profile/useProfile";
+import Alert from "../../../ui/alert/Alert";
+import CardAlert from "./card-alert/CardAlert";
 
-const Card = () => {
+const Card = ({ isAdd, setIsAdd }) => {
   const [cvvShow, setCvvShow] = useState(true);
+  const [deleteShow, setDeleteShow] = useState(false);
+  const [addShow, setAddShow] = useState(false);
+  const [isCreate, setIsCreate] = useState(false);
 
   const { data, isLoading } = useProfile();
 
@@ -25,22 +30,69 @@ const Card = () => {
       </div>
       <div className={styles.cards_middle}>
         <div className={styles.fignya}></div>
-        <div className={styles.card}>
-          <div className={styles.full_name}>
-            {data?.name}
-            <img className={styles.svg} src="/images/mastercard.svg" alt="" />
+        {addShow ? (
+          <CardAlert
+            text1="Add"
+            text2="Create"
+            message="Would you like to create or add new card?"
+            clickHandler1={() => setIsAdd(true)}
+            clickHandler2={() => {
+              setIsCreate(true);
+              setAddShow(false);
+              setDeleteShow(false);
+            }}
+          />
+        ) : deleteShow ? (
+          <CardAlert
+            text1="Delete"
+            text2="Cancel"
+            message="Would you like to delete card?"
+            clickHandler1={() => {
+              setAddShow(false);
+              setDeleteShow(false);
+            }}
+            clickHandler2={() => {
+              setAddShow(false);
+              setDeleteShow(false);
+            }}
+          />
+        ) : (
+          <div className={styles.card}>
+            <div className={styles.full_name}>
+              {data?.name}
+              <img className={styles.svg} src="/images/mastercard.svg" alt="" />
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <div className="flex">
+              {isCreate ? (
+                <div>
+                  <Button
+                    clickHandler={() => setIsCreate(false)}
+                    buttonText={"Create"}
+                    type={"purple"}
+                  />
+                  <Button
+                    clickHandler={() => setIsCreate(false)}
+                    buttonText={"Cancel"}
+                  />
+                </div>
+              ) : (
+                <>
+                  <p className={styles.number}>{User.card.number}</p>
+                  <p
+                    onClick={() => setCvvShow(!cvvShow)}
+                    className={styles.cvv}
+                  >
+                    {cvvShow === true ? "cvv" : User.card.cvv}
+                  </p>
+                </>
+              )}
+            </div>
           </div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <div className="flex">
-            <p className={styles.number}>{User.card.number}</p>
-            <p onClick={() => setCvvShow(!cvvShow)} className={styles.cvv}>
-              {cvvShow === true ? "cvv" : User.card.cvv}
-            </p>
-          </div>
-        </div>
+        )}
       </div>
       <div className={styles.cards_bottom}>
         <SvgLink linkText={"Show Card Details"}>
@@ -61,6 +113,10 @@ const Card = () => {
             type={"purple"}
             width={50}
             height={50}
+            clickHandler={() => {
+              setDeleteShow(false);
+              setAddShow(true);
+            }}
           >
             <AiOutlinePlus size={17} fill="#fff" />
           </Button>
@@ -70,9 +126,14 @@ const Card = () => {
             width={50}
             height={50}
             position={"right"}
+            clickHandler={() => {
+              setAddShow(false);
+              setDeleteShow(true);
+            }}
           >
             <AiOutlineMinus size={17} fill="#ed513e" />
           </Button>
+          <Alert text={"Card have been add successfully!"} />
         </div>
       </div>
     </>

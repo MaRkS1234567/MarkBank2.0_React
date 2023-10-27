@@ -22,6 +22,8 @@ const Button = ({
           ? styles.button_purple
           : type === "error"
           ? styles.button_error
+          : type === "white"
+          ? styles.button_white
           : styles.button_common
       }
       onClick={clickHandler}

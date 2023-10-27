@@ -1,21 +1,22 @@
 import styles from "./Calendar.module.scss";
 import { LuCalendarDays } from "react-icons/lu";
-import DateRangePicker from "react-datepicker";
-import DemoItem from "react-datepicker";
+import DateRange from "./date-range/DateRange";
+import { useState } from "react";
 
-const Calendar = () => {
+const Calendar = ({ isShow, setIsShow }) => {
   return (
-    <>
-      <div className={styles.calendar}>
-        <p>Select Date Range</p>
-        <div>
-          <LuCalendarDays size={20} />
-        </div>
+    <div
+      className={styles.calendar}
+      styles={{
+        background: "#F5F5F5 !important",
+      }}
+      onClick={() => !isShow && setIsShow(!isShow)}
+    >
+      {isShow ? <DateRange /> : <p>Select Date Range</p>}
+      <div onClick={() => setIsShow(!isShow)} className={styles.background}>
+        <LuCalendarDays size={20} />
       </div>
-      {/* <DemoItem label="1 calendar" component="DateRangePicker">
-        <DateRangePicker calendars={2} />
-      </DemoItem> */}
-    </>
+    </div>
   );
 };
 

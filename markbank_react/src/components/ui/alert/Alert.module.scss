@@ -1,0 +1,33 @@
+@import "src/assets/styles/variables";
+
+.alert {
+  position: absolute;
+  // width: 389px;
+  background: $purple-accent;
+  padding-left: 25px;
+  padding-right: 25px;
+  top: 22px;
+  right: 0px;
+  height: 44px;
+  border-radius: 33.5px 0 0 33.5px;
+  padding-top: 23px;
+  color: $dark-accent;
+  animation-duration: 0.7s;
+  animation-name: slidein;
+  font-size: 17px;
+}
+
+@keyframes slidein {
+  from {
+    right: -500px;
+  }
+
+  to {
+    right: 0px;
+  }
+}
+
+.is_error {
+  background-color: $light-error;
+  color: $dark-error;
+}

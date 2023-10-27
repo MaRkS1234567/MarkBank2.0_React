@@ -12,6 +12,11 @@
 .top {
   background: transparent;
   display: flex;
+  justify-content: right;
+
+  > p {
+    margin-right: auto;
+  }
 }
 
 .arrow {
@@ -21,7 +26,9 @@
   width: 50px;
   height: 50px;
   margin-top: 15px;
-  margin-right: 30px;
+  margin-right: 15px;
+  position: absolute;
+  // right: 8.2%; //10px
 
   > svg {
     background-color: transparent;
@@ -34,4 +41,5 @@
   overflow-y: auto;
   overflow-x: hidden;
   height: calc(100% - 67px);
+  // position: relative;
 }

@@ -1,8 +1,11 @@
 import styles from "./Invites.module.scss";
 import { FaCopy } from "react-icons/fa6";
 import { User } from "../../../../models/User.model.js";
+import { useProfile } from "../../../layout/header/profile/useProfile";
 
 const Invites = () => {
+  const { data } = useProfile();
+
   const monthNames = [
     "JAN",
     "FEB",
@@ -19,8 +22,7 @@ const Invites = () => {
   ];
   let date = new Date();
   const code =
-    User.first_name.toUpperCase() +
-    User.last_name.toUpperCase() +
+    "AbelCollier".toUpperCase().replace(/\s/g, "") +
     "-" +
     monthNames[date.getMonth()] +
     date.getFullYear();
@@ -39,6 +41,7 @@ const Invites = () => {
               size={23}
               onClick={() => {
                 navigator.clipboard.writeText(code);
+                alert("copied to clipboard!");
               }}
             />
           </div>

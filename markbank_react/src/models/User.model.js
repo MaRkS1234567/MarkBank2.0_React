@@ -7,7 +7,7 @@ export const User = {
   },
   card: {
     number: "4120 4119 9212 3141",
-    cvv: "123",
+    cvv: "437",
     balance: 29475,
   },
   total_balance: 29475,

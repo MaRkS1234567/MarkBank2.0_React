@@ -4,17 +4,21 @@ import { AiFillBank } from "react-icons/ai";
 import { BsChevronRight, BsSteam } from "react-icons/bs";
 import Transaction from "./transaction/Transaction";
 import Calendar from "./calendar/Calendar";
+import { useState } from "react";
 
 const History = () => {
+  const [isShow, setIsShow] = useState(false);
+
   return (
     <div className={styles.history}>
       <div className={styles.top}>
         <Titles>Transaction History</Titles>
-        <Calendar />
+        <Calendar isShow={isShow} setIsShow={setIsShow} />
         <button className={styles.arrow}>
           <BsChevronRight size={20} fill="#fff" />
         </button>
       </div>
+      {/* {!isShow && ( */}
       <div className={styles.transactions}>
         <Transaction
           name={"Alina Sooela"}
@@ -55,6 +59,7 @@ const History = () => {
           <AiFillBank size={30} fill="#000" />
         </Transaction>
       </div>
+      {/* )} */}
     </div>
   );
 };

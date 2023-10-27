@@ -43,3 +43,119 @@ body {
 .transparent {
   background: transparent;
 }
+
+.rdp-day_selected {
+  background: $purple-accent !important;
+  color: black !important;
+}
+
+// .rdp-caption_label {
+//   color: $dark-accent !important;
+// }
+
+.rdp-day {
+  color: $dark-accent !important;
+}
+
+// .rdp-head_cell {
+//   color: $dark-accent !important;
+// }
+
+.rdp {
+  margin-top: 5px !important;
+  position: relative !important;
+}
+
+.rdp-button:hover {
+  background: #877793 !important;
+}
+
+.rdp-nav_button:hover {
+  background: #f5f5f5 !important;
+}
+
+.rdp-nav_icon {
+  background: transparent !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.checkbox.style-e {
+  display: inline-block;
+  position: relative;
+  // padding-left: 50px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: calc(100% - 40px);
+  background-color: transparent !important;
+}
+.checkbox.style-e input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox.style-e input:checked ~ .checkbox__checkmark {
+  background-color: white;
+}
+.checkbox.style-e input:checked ~ .checkbox__checkmark:after {
+  left: 21px;
+}
+.checkbox.style-e:hover input ~ .checkbox__checkmark {
+  background-color: $dark-accent;
+}
+.checkbox.style-e:hover input:checked ~ .checkbox__checkmark {
+  background-color: white;
+}
+.checkbox.style-e .checkbox__checkmark {
+  position: absolute;
+  top: 13px;
+  // left: 33;
+  right: 0;
+  height: 22px;
+  width: 40px;
+  background-color: $dark-accent;
+  transition: background-color 0.25s ease;
+  border-radius: 11px;
+}
+.checkbox.style-e .checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  display: block;
+  background-color: $purple-accent;
+  border-radius: 50%;
+  transition: left 0.25s ease;
+}
+.checkbox.style-e .checkbox__body {
+  color: #333;
+  line-height: 1.4;
+  font-size: 16px;
+  transition: color 0.25s ease;
+}
+
+.three_seconds {
+  animation-name: slideout !important;
+  font-size: 17px !important;
+}
+
+@keyframes slideout {
+  from {
+    right: 0px;
+  }
+
+  to {
+    right: -500px;
+  }
+}

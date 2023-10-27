@@ -16,7 +16,7 @@
 
 .button_common {
   display: flex;
-  background: $light-accent;
+  background: #eee;
   color: black;
   border: none;
   justify-content: center;
@@ -38,6 +38,20 @@
 
   > svg {
     background: $light-error;
+    margin-left: 20px;
+  }
+}
+
+.button_white {
+  display: flex;
+  background-color: white;
+  color: $dark-accent;
+  border: none;
+  justify-content: center;
+  align-items: center;
+
+  > svg {
+    background: white;
     margin-left: 20px;
   }
 }
